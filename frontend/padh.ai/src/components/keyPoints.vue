@@ -32,7 +32,6 @@ export default {
             return marked(text);
         },
         async sendData() {
-            this.$emit('child-data', "Loading Lecture Keypoints...");
             let request = {
                 url: __API_URL__ + "summary" + `/${this.$route.query.contentId}`,
                 method: "GET",
